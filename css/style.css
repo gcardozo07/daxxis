@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('../fonts/Calligraffiti-webfont.eot');
+    src: url('../fonts/Calligraffiti-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Calligraffiti-webfont.woff') format('woff'),
+         url('../fonts/Calligraffiti-webfont.ttf') format('truetype'),
+         url('../fonts/Calligraffiti-webfont.svg#calligraffitiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.slider {
+  width: 100%;
+}
+.slider-slide {
+  text-align: center;
+  background: #fff;
+  min-height: 360px;
+  width: 100%;
+}
+
+.slider-slide img{
+  width: 100%;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.text-home{
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.tabs{
+  padding-top: 5px !important;
+}
+
+.marca{
+  color: #c00;
+  font-weight: bold;
+}
+.icon-me{
+  position: absolute;
+  right: 30px;
+  vertical-align: middle;
+  font-size: 40px;
+  display: inline-block;
+  top: 30%;
+}
+.content-all{
+  width: 100%;
+  background: #000;
+  height:auto;
+}
+.cont-catalogo-cont{
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cont-catalogo-cont .content-image{
+  overflow: hidden;
+  
+}
+
+.cont-catalogo-cont img{
+  margin: 0;
+  padding: 0;
+  height: 33.33% !important;
+  display: block;
+  width: auto !important;
+  
+}
+
+.titlecatalog{
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  z-index: 999;
+  position: absolute;
+}
+
+.mujer{
+  background: rgba( 211,0,82,0.8);
+}
+
+.hombre{
+  background: rgba( 38,0,126,0.78);
+}
+
+.bolsos{
+  background: rgba( 0,209,180,0.8);
+}
+
+.titlecatalog h1{
+  color: #fff;
+  font-family: 'calligraffitiregular';
+}
+
+.titlecatalog h1 a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.scroll{
+  height: 100% !important;
+}
+
+.cat-linea{
+  width: 50%;
+  overflow: hidden;
+  height: auto;
+  padding:5px;
+  display: inline-block;
+}
+
+.cat-linea .linea-title{
+  position: relative;
+  text-align: center;
+}
+
+.cat-linea .linea-title h3{
+  color: #fff;
+  font-family: 'calligraffitiregular';
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+}
+.cat-linea .linea-title h3 i{
+  color: #D30052;
+}
+.linea-image-wraper{
+  width: 100%;
+  overflow: hidden;
+}
+.linea-image-wraper img{
+  width: 100%;
+}
+.black{
+  background: #000;
+}
+
+.image-thumbail{
+  width: 33.33%;
+  min-height: 150px;
+  display: inline-block;
+  padding:  0 2px;
+  margin-bottom: 5px;
+}
+
+.image-thumbail h4{
+  font-family: 'calligraffitiregular';
+  font-size: 24px;
+  color: #fff;
+}
+.image-thumbail h4 i{
+  color: #fff;
+}
+
+.thumb-image-wraper{
+  width: 100%;
+}
+
+.thumb-image-wraper img{
+  width: 100%;
+}
+.thumb-title{
+  padding: 1px 10px;
+  background: #D30052;
+  position: relative;
+  top: -5px;
+}
+
+.content-big img{
+  height: 50% !important;
+  display:block;
+  width: 100% !important; 
+}
+
+.jean-detail{
+  width: 100%;
+  background: #D30052;
+  height: auto;
+  text-align: right;
+}
+
+.jean-detail h1{
+  font-family: 'calligraffitiregular';
+  font-size: 36px;
+  color: #fff;
+  margin: 0px 10px; 
+}
+
+.jean-detail li{
+  color: #fff;
+  list-style: none;
+}
+.icon-back{
+  color: #D30052 !important;
+  font-size: 48px !important;
+}
