@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <link href="css/style.css" rel="stylesheet">
+    
+    <link href="css/app.css" rel="stylesheet">
+    
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body>
+    
+    <ion-nav-bar class="nav-title-slide-ios7 bar-dark">
+      <ion-nav-back-button class="icon-back ion-reply">
+      </ion-nav-back-button>
+      <h1 class="title"><img class="title-image" src="img/daxxis.png" width="300" /></h1>
+    </ion-nav-bar>
+             
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+
+<!-- tabs views -->
+    <script id="templates/tabs.html" type="text/ng-template">
+      
+      <ion-tabs class="tabs-icon-top tabs-dark">
+
+        <ion-tab icon="ion-heart" href="#/tab/home">
+          <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon="ion-images" href="#/tab/catalogotab">
+          <ion-nav-view name="catalogotab-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab icon="ion-chatbubble-working" ui-sref="tabs.contact">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+      </ion-tabs>
+
+    </script>
+
+<!-- end tabs views -->
+
+<!-- template views -->
+    <script id="templates/home.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/catalogo">Catalogo</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>Facts Banging your head against a wall uses 150 calories an hour.</p>
+          <p>Dogs have four toes on their hind feet, and five on their front feet.</p>
+          <p>The ant can lift 50 times its own weight, can pull 30 times its own weight and always falls over on its right side when intoxicated.</p>
+          <p>A cockroach will live nine days without it's head, before it starves to death.</p>
+          <p>Polar bears are left handed.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">More Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/catalogo.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>Banging your head against a wall uses 150 calories an hour.</p>
+          <p>Dogs have four toes on their hind feet, and five on their front feet.</p>
+          <p>The ant can lift 50 times its own weight, can pull 30 times its own weight and always falls over on its right side when intoxicated.</p>
+          <p>A cockroach will live nine days without it's head, before it starves to death.</p>
+          <p>Polar bears are left handed.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">More Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/facts2.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="padding">
+          <p>111,111,111 x 111,111,111 = 12,345,678,987,654,321</p>
+          <p>1 in every 4 Americans has appeared on T.V.</p>
+          <p>11% of the world is left-handed.</p>
+          <p>1 in 8 Americans has worked at a McDonalds restaurant.</p>
+          <p>$283,200 is the absolute highest amount of money you can win on Jeopardy.</p>
+          <p>101 Dalmatians, Peter Pan, Lady and the Tramp, and Mulan are the only Disney cartoons where both parents are present and don't die throughout the movie.</p>
+          <p>
+            <a class="button icon ion-home" href="#/tab/home"> Home</a>
+            <a class="button icon ion-chevron-left" href="#/tab/facts"> Scientific Facts</a>
+          </p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/catalogotab.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="content-all">
+        <div ng-controller="catalogoController as catalogoCtrl">
+          <div class="cont-catalogo-cont" ng-repeat="gen in catalogoCtrl.genero">
+            <a ng-href="#/tab/{{gen.tab}}"><img ng-src="{{gen.imagen}}" /></a>
+            <div class="titlecatalog {{gen.clase}}">
+              <h1 class="padding"><a ng-href="#/tab/mujer">{{gen.titulo}} <i class="ion-forward"></i></a></h1>
+            </div>
+          </div>
+        </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/mujer.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="black" ng-controller="mujerlineacontroller as mulineaCtrl">
+          <div class="cat-linea" ng-repeat="linea in mulineaCtrl.lineamujer">
+            <div class="linea-image-wraper"><a ng-href="#/tab/{{linea.tab}}"><img ng-src="{{linea.imagenlineamujer}}" /></a></div>
+            <div class="linea-title">
+              <h3>{{linea.titulolinea}} <i class="ion-forward"></i></h3>
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/jeansmujer.html" type="text/ng-template">
+      <ion-view>
+        <ion-content class="black" ng-controller="jeansmujercontroller as jeansmuCtrl">
+          <div class="image-thumbail" ng-repeat="jeanmujer in jeansmuCtrl.jmujer">
+            <div class="thumb-image-wraper">
+              <a ng-href="#/tab/{{jeanmujer.tab}}"></a>
+            </div>
+            <div class="thumb-title">
+              <a ng-href="#/tab/{{jeanmujer.tab}}"><h4>{{jeanmujer.titulojmujer}} <i class="ion-forward"></i></h4></a>
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/jeanbig.html" type="text/ng-template">
+      <ion-view>
+        <ion-content ng-controller="bigController as bigCtrl">
+          <div class="content-big">
+            <div class="image-big-wraper"><img ng-src="{{bigCtrl.big.imagebig}}" /></div>
+            <div class="jean-detail padding">
+              <h1>Adele</h1>
+              <li>{{bigCtrl.big.estilo}}</li>
+              <li>Talla: {{bigCtrl.big.talla}}</li>
+              <li>{{bigCtrl.big.material}}</li>
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script id="templates/contact.html" type="text/ng-template">
+      <ion-view>
+        <ion-content>
+          <div class="list">
+            <div class="item">
+              @IonicFramework
+            </div>
+            <div class="item">
+              @DriftyTeam
+            </div>
+          </div>
+        </ion-content>
+      </ion-view>
+    </script>
+
+<!-- template views -->
+
+  </body>
+</html>
