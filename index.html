@@ -149,10 +149,10 @@
         <ion-content class="black" ng-controller="jeansmujercontroller as jeansmuCtrl">
           <div class="image-thumbail" ng-repeat="jeanmujer in jeansmuCtrl.jmujer">
             <div class="thumb-image-wraper">
-              <a ng-href="#/tab/{{jeanmujer.tab}}"></a>
+              <a ng-href="#/tab/{{jeanmujer.tab}}"><img ng-src="{{jeanmujer.jeanmujerimage}}" /></a>
             </div>
             <div class="thumb-title">
-              <a ng-href="#/tab/{{jeanmujer.tab}}"><h4>{{jeanmujer.titulojmujer}} <i class="ion-forward"></i></h4></a>
+              <h4>{{jeanmujer.titulojmujer}} <i class="ion-forward"></i></h4>
             </div>
           </div>
         </ion-content>

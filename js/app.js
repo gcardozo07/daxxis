@@ -165,139 +165,139 @@ angular.module('ionicApp', ['ionic'])
     this.jmujer = [
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/adele.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/adele.jpg',
     titulojmujer: 'Adele',
     tab: 'jeanbig'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/ambar.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/ambar.jpg',
     titulojmujer: 'Ambar',
     tab: 'jeanbig'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/anabelle.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/anabelle.jpg',
     titulojmujer: 'Anabelle',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/azaneth.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/azaneth.jpg',
     titulojmujer: 'Azaneth',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/belinda.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/belinda.jpg',
     titulojmujer: 'Belinda',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/celeste.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/celeste.jpg',
     titulojmujer: 'Celeste',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/coral.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/coral.jpg',
     titulojmujer: 'Coral',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/denise.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/denise.jpg',
     titulojmujer: 'Denise',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/dona.jpg',
-    titulojmujer: 'Dona',
+    jeanmujerimage: 'img/mujer/jeans/thumb/donna.jpg',
+    titulojmujer: 'Donna',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/dulce.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/dulce.jpg',
     titulojmujer: 'Dulce',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/fanny.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/fanny.jpg',
     titulojmujer: 'Fanny',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/gema.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/gema.jpg',
     titulojmujer: 'Gema',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/ginebra.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/ginebra.jpg',
     titulojmujer: 'Ginebra',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/konny.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/konny.jpg',
     titulojmujer: 'Konny',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/liz.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/liz.jpg',
     titulojmujer: 'Liz',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/lupita.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/lupita.jpg',
     titulojmujer: 'Lupita',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/maggi.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/maggi.jpg',
     titulojmujer: 'Maggi',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/mahia.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/mahia.jpg',
     titulojmujer: 'Mahia',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/nayarit.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/nayarit.jpg',
     titulojmujer: 'Nayarit',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/ninfa.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/ninfa.jpg',
     titulojmujer: 'Ninfa',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/sandy.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/sandy.jpg',
     titulojmujer: 'Sandy',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/teresina.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/teresina.jpg',
     titulojmujer: 'Teresina',
     tab: 'jeansmujer'
   },
   {
     id: '001',
-    jeanmujerimage: 'img/mujer/jeans/zaida.jpg',
+    jeanmujerimage: 'img/mujer/jeans/thumb/zaida.jpg',
     titulojmujer: 'Zaida',
     tab: 'jeansmujer'
   }
