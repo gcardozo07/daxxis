@@ -217,6 +217,7 @@ body {
   list-style: none;
 }
 .icon-back{
-  color: #D30052 !important;
+  color: #ffffff !important;
   font-size: 48px !important;
+  border:0 !important; 
 }

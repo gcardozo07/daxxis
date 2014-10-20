@@ -23,7 +23,7 @@
   </head>
   <body>
     
-    <ion-nav-bar class="nav-title-slide-ios7 bar-dark">
+    <ion-nav-bar class="nav-title-slide-ios7 bar-positive">
       <ion-nav-back-button class="icon-back ion-reply">
       </ion-nav-back-button>
       <h1 class="title"><img class="title-image" src="img/daxxis.png" width="300" /></h1>
@@ -37,15 +37,15 @@
       
       <ion-tabs class="tabs-icon-top tabs-dark">
 
-        <ion-tab icon="ion-heart" href="#/tab/home">
+        <ion-tab icon="ion-heart" title="Inicio" href="#/tab/home">
           <ion-nav-view name="home-tab"></ion-nav-view>
         </ion-tab>
 
-        <ion-tab icon="ion-images" href="#/tab/catalogotab">
+        <ion-tab icon="ion-film-marker" title="Catalogo" href="#/tab/catalogotab">
           <ion-nav-view name="catalogotab-tab"></ion-nav-view>
         </ion-tab>
 
-        <ion-tab icon="ion-chatbubble-working" ui-sref="tabs.contact">
+        <ion-tab icon="ion-chatbubble-working" title="Contacto" ui-sref="tabs.contact">
           <ion-nav-view name="contact-tab"></ion-nav-view>
         </ion-tab>
 
@@ -58,27 +58,18 @@
 <!-- template views -->
     <script id="templates/home.html" type="text/ng-template">
       <ion-view>
-        <ion-content class="padding">
-          <p>
-            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
-            <a class="button icon icon-right ion-chevron-right" href="#/tab/catalogo">Catalogo</a>
-          </p>
-        </ion-content>
-      </ion-view>
-    </script>
-
-    <script id="templates/facts.html" type="text/ng-template">
-      <ion-view>
-        <ion-content class="padding">
-          <p>Facts Banging your head against a wall uses 150 calories an hour.</p>
-          <p>Dogs have four toes on their hind feet, and five on their front feet.</p>
-          <p>The ant can lift 50 times its own weight, can pull 30 times its own weight and always falls over on its right side when intoxicated.</p>
-          <p>A cockroach will live nine days without it's head, before it starves to death.</p>
-          <p>Polar bears are left handed.</p>
-          <p>
-            <a class="button icon ion-home" href="#/tab/home"> Home</a>
-            <a class="button icon icon-right ion-chevron-right" href="#/tab/facts2">More Facts</a>
-          </p>
+        <ion-content class="black">
+          <ion-slide-box on-slide-changed="slideChanged(index)" does-continue="true" slide-interval="5000" disable-scroll="false">
+          <ion-slide class="black">
+            <img ng-src="img/slide-01.jpg" />
+          </ion-slide>
+          <ion-slide class="black">
+            <img ng-src="img/slide-02.jpg" />
+          </ion-slide>
+          <ion-slide class="black">
+            <img ng-src="img/slide-03.jpg" />
+          </ion-slide>
+        </ion-slide-box>
         </ion-content>
       </ion-view>
     </script>
@@ -161,7 +152,7 @@
 
     <script id="templates/jeanbig.html" type="text/ng-template">
       <ion-view>
-        <ion-content ng-controller="bigController as bigCtrl">
+        <ion-content class="black" ng-controller="bigController as bigCtrl">
           <div class="content-big">
             <div class="image-big-wraper"><img ng-src="{{bigCtrl.big.imagebig}}" /></div>
             <div class="jean-detail padding">
