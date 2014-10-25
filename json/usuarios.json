@@ -1,0 +1,6 @@
+usuarios : {
+	uno: Gerardo,
+	dos: Fabian,
+	Tres: Camilo,
+	cuatro: Javier
+};

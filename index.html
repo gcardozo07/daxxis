@@ -14,11 +14,20 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
+    
+    <!-- ionic/firebase js -->
+    <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+    
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
+    <script src="js/fastclick.js"></script>
 
   </head>
   <body>
@@ -168,15 +177,48 @@
 
     <script id="templates/contact.html" type="text/ng-template">
       <ion-view>
-        <ion-content>
-          <div class="list">
-            <div class="item">
-              @IonicFramework
-            </div>
-            <div class="item">
-              @DriftyTeam
-            </div>
+        <ion-content ng-controller="MyController" class="padding">
+        <div class="list">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/gransan.jpg">
+      <h2 class="title-place">Centro Comercial Gran San</h2>
+      <p>Carrera 10 calle 10 Locales 2290 y 2291 <br/> Bogotá, Colombia</p>
+    </a>
+
+    <a class="item item-thumbnail-right" href="#">
+      <img src="img/gransan2.jpg">
+      <h2 class="title-place">Centro Comercial Gran San</h2>
+      <p>Carrera 10 calle 10 Locales 2290 y 2291 <br/> Bogotá, Colombia</p>
+    </a>
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="img/gransan3.jpg">
+      <h2 class="title-place">Centro Comercial Gran San</h2>
+      <p>Carrera 10 calle 10 Locales 2290 y 2291 <br/> Bogotá, Colombia</p>
+    </a>
+
+</div>
+          
+      
+
+      <div>
+      <form name="form" novalidate class="css-form padding">
+      <h1 class="contact-title"><i class="ion-star i-dark"></i> Registra tu correo para recibir las ultimas noticias...</h1>
+        <label for='nombreInput'></label>
+        <input ng-model='nombre' type='text' name="uName" id='nombreInput' placeholder='Ingersa tu Nombre'>
+        <br/>
+        <label for='correoInput'></label>
+        <input ng-model='correo' type='email' name="uEmail" required id='correoInput' placeholder='Ingersa tu Correo'>
+          <div ng-show="form.uEmail.$dirty && form.uEmail.$invalid">
+            <span ng-show="form.uNname.$error.required">Tell us your email.</span>
+            <span ng-show="form.uEmail.$error.email" class="text-valid"><i class="ion-close-circled"></i> Por favor Ingresa un Correo valido</span>
           </div>
+        <br/>
+        <a class="button icon-left ion-ios7-email button-positive" ng-click="addMessage($event)" ng-disabled="form.$invalid || isUnchanged(user)">enviar</a>
+      </form>
+      </div>
+          
         </ion-content>
       </ion-view>
     </script>

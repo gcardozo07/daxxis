@@ -1,4 +1,4 @@
-angular.module('ionicApp', ['ionic'])
+angular.module('ionicApp', ['ionic','firebase'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 
@@ -312,8 +312,42 @@ angular.module('ionicApp', ['ionic'])
     estilo: 'Trabajo Bajo - Bota Tubo',
     talla: '6-8-10-12-14',
     material: 'Indigo Algodon Elastomero'
-  }
-  
-});
+  };
+})
+
+.controller('MyController', ['$scope', '$firebase',
+        function($scope, $firebase) {
+          //CREATE A FIREBASE REFERENCE
+          var ref = new Firebase("https://daxxis.firebaseio.com");
+
+          // GET MESSAGES AS AN ARRAY
+          $scope.messages = $firebase(ref).$asArray();
+
+          //ADD MESSAGE METHOD
+          $scope.addMessage = function(e) {
+
+            //LISTEN FOR RETURN KEY
+            
+              //ALLOW CUSTOM OR ANONYMOUS USER NAMES
+              var nombre = $scope.nombre || 'anonymous';
+              var correo = $scope.correo || 'anonymous';
+
+              //ADD TO FIREBASE
+              $scope.messages.$add({
+                from: nombre,
+                mail: correo
+              });
+
+              $scope.isUnchanged = function(user) {
+      return angular.equals(user, $scope.master);
+    };
+
+              //RESET MESSAGE
+              $scope.nombre = "",
+              $scope.correo = "";
+            
+          }
+        }
+      ]);
 
 

@@ -1,0 +1,11 @@
+<ul id='example-messages'>
+        <li ng-repeat='msg in messages'>
+          <strong>{{msg.from}}</strong>
+          <strong class="positive">{{msg.mail}}</strong>
+          {{msg.body}}
+        </li>
+      </ul>
+
+
+
+<input ng-model='msg' type='text' id='messageInput'  placeholder='Type a message...'>
